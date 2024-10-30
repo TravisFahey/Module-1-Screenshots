@@ -1,0 +1,49 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram id="fZIaBez04e6-nlH9HIiZ" name="Page-1">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hoe13QFxdszxzHLGzCas-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-1" target="hoe13QFxdszxzHLGzCas-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-1" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-2" target="hoe13QFxdszxzHLGzCas-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-2" value="Declarations:&lt;div&gt;num projectedHours&lt;/div&gt;&lt;div&gt;num materialsCost&lt;/div&gt;&lt;div&gt;num totalCost&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="352" y="120" width="147" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-3" target="hoe13QFxdszxzHLGzCas-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-3" value="Output &quot;Enter projected amount of hours.&quot;&lt;div&gt;input projectedHours&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="230" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-4" target="hoe13QFxdszxzHLGzCas-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-4" value="Output &quot;Enter wholesale materials price.&quot;&lt;div&gt;input materialsCost&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="320" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-8" value="totalCost = (projectedHours * 30) + (materialsCost * 1.20)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322" y="420" width="207" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-9" target="hoe13QFxdszxzHLGzCas-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-9" value="output totalCost&lt;div&gt;output &quot;End of Program&quot;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="510" width="205" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.463;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hoe13QFxdszxzHLGzCas-8" target="hoe13QFxdszxzHLGzCas-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hoe13QFxdszxzHLGzCas-12" value="STOP" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="372.5" y="610" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
