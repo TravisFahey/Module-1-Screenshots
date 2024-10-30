@@ -1,0 +1,19 @@
+Pesudocode Module 2 - Exercise 2 - Travis Fahey
+
+START
+	Declarations
+		num accountBalance
+		num withdrawnCount
+		num overDrawnFee
+		num newAccountBalance
+		
+	input accountBalance
+	input widthrawnCount
+	
+	overDrawnFee = (accountBalance * .01) + (5 * withdrawnCount)
+	newAccountBalance = accountBalance - overDrawnFee
+	
+	Output "Overdraw fee: " + overDrawnFee
+	Output "New account balance: " + newAccountBalance
+	Output "Thanks for using this program."
+STOP

@@ -1,0 +1,31 @@
+Pseudocode Module 2 – Exercise 1 – Travis Fahey
+
+START
+	declarations
+		string modelName
+		num interiorHeight
+		num width
+		num depthInches
+
+	Output "Please enter the refridgerator model name."
+	Input modelName
+	
+	Output "Please enter the interior height."
+	input interior height
+	
+	Output "Please enter the width."
+	input width
+
+	Output "Please enter the depth in inches."
+	input depthInches
+
+	cubicFeet = (interorHeight * width * depthInches) / 1728
+
+	Output "Your " + modelName + "has a capacity of " + cubicInches + "cubic feet."
+STOP
+
+
+
+	
+
+
