@@ -1,0 +1,54 @@
+Module 6 - Making Decisions - Travis Fahey
+
+start
+    Declarations
+        num areaCode, phoneNumber, textMessagesSent
+        num baseFee = 5.00
+        num costAfter100 = 0.03
+        num costAfter300 = 0.02
+        num taxRate = 0.14
+        num monthlyBill, totalBillWithTax
+        string sentinel = "999"
+
+    HouseKeeping()
+    while areaCode != sentinel
+        detailLoop()
+    endwhile
+    finish()
+stop
+
+Housekeeping()
+    output "Text Messaging Monthly Bill Calculator"
+    return
+
+DetailLoop()
+    output "Please enter your area code or 999 to end."
+    input areaCode
+    if areaCode == sentinel then
+        return
+    endif
+    output "Enter phone number and text messages sent."
+    input phoneNumber, textMessagesSent
+
+    
+    if textMessagesSent <= 100 then
+        monthlyBill = baseFee
+    else if textMessagesSent <= 300 then
+        monthlyBill = baseFee + (textMessagesSent - 100) * costAfter100
+    else
+        monthlyBill = baseFee + (200 * costAfter100) + (textMessagesSent - 300) * costAfter300
+    endif
+
+    totalBillWithTax = monthlyBill + (monthlyBill * taxRate)
+
+    if textMessagesSent > 100 AND monthlyBill > 10 
+    	output "Area Code: " + areaCode + " + Phone Number: " + phoneNumber
+    	output "Text Messages Sent: " + textMessagesSent
+    	output "Monthly Bill Before Tax: $" + monthlyBill
+    	output "Monthly Bill After Tax: $" + totalBillWithTax
+    endif
+    return
+
+Finish()
+    output "Program ended"
+    return
