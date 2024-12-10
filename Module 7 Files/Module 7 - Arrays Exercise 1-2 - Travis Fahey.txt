@@ -1,0 +1,27 @@
+Module 7 - Arrays Exercise 1-2 - Travis Fahey
+START
+    Declarations
+        num index = 0
+        num maxSize = 20
+        num NUMBERS[maxSize]
+        num sentinel = -1
+        num inputValue = 0
+
+    output "Enter numbers or enter " + sentinel + " to end."
+
+    while inputValue != sentinel and index < maxSize
+        output "Enter number " + (index + 1) + ":"
+        input inputValue
+        if inputValue != sentinel then
+            NUMBERS[index] = inputValue
+            index = index + 1
+        endIf
+    endWhile
+
+    output "Numbers in reverse order:"
+    
+    for index = index - 1 to 0 step -1
+        output NUMBERS[index]
+    endfor
+STOP
+

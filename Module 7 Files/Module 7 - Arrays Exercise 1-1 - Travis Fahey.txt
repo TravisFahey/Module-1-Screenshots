@@ -1,0 +1,19 @@
+Module 7 - Arrays Exercise 1-1 - Travis Fahey
+
+START
+    Declarations
+        num index
+        num size = 20
+        num NUMBERS[size]
+
+    for index = 0 to size - 1 step 1
+        output "Enter number ", index + 1, ":"
+        input NUMBERS[index]
+    endfor
+
+    output "Numbers in reverse order:"
+
+    for index = size - 1 to 0 step -1
+        output NUMBERS[index]
+    endfor
+STOP

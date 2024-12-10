@@ -1,0 +1,19 @@
+Module 7 - Effective Decision Loops - Travis Fahey 
+
+START
+	Declarations
+    		num userSum = 0
+    		num userNumber = 99
+		num quitValue = 0
+
+	while userNumber != quitValue
+    		output "Please enter a number, or zero to quit."
+    		input userNumber		
+		if userNumber != quitValue then
+    			userSum = userSum + UserNumber
+		endIf
+	endWhile
+
+	output "The final sum is " + userSum
+END
+

@@ -1,0 +1,49 @@
+Module 7 - Arrays Exercise 2 testing scenarios - Travis Fahey
+
+START
+    Declarations
+        num coffeePrice = 2.00
+        num totalPrice = 0.00
+        string addIn
+        string sentinel = "done"
+	num addinsLength = 5
+
+        
+        string ADD_INS[] = {"Whipped cream", "Cinnamon", "Chocolate sauce", "Amaretto", "Irish whiskey"}
+        num PRICES[] = {0.89, 0.25, 0.59, 1.50, 1.75}
+
+    output "Welcome to Jumpin' Jive Coffee Shop."
+    output "A coffee costs $" + coffeePrice
+    output "Available add-ins include Whipped cream, Cinnamon, Chocolate sauce, Amaretto, Irish whiskey"
+    output "Enter done to finish your order."
+
+    totalPrice = coffeePrice
+
+    output "Enter an add-in or done to finish."
+    input addIn //USER ENTERS "Whipped Cream"
+
+    while addIn != sentinel
+        bool found = false
+	
+	num index = 1
+        for index to addinsLength - 1 step 1
+            if addIn == ADD_INS[index] then
+                found = true
+                totalPrice = totalPrice + PRICES[index] //EQUALS 2.89
+                output "Added " + addIn + " for $" + PRICES[index] 
+		index = addinsLength - 1
+            endif
+        endfor
+
+        if found == false then
+            output "Sorry, that add-in was not found."
+        endif
+
+        output "Enter an add-in or done to finish:"
+        input addIn //USER ENTERS "done"
+    endwhile
+
+    output "Your total price is $" + totalPrice //"Your total price is $2.89."
+    output "Thank you for visiting Jumpin' Jive Coffee Shop!"
+
+STOP

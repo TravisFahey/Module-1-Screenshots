@@ -1,0 +1,60 @@
+Module 7 - Effective Decision Loops 2 - Travis Fahey
+
+START
+	Declarations
+		num workingYearsLeft
+		float saveAmountPerYear
+		float totalSavings
+		float savingsNeeded
+		float remainingBalance
+
+		float annualInterestRate = .03
+		num quitValue = 0
+		float spendingPerYear = 60,000
+		retirement years = 30
+		currentYear = 1
+
+	output "Enter the projected amount of years you have until retirement or " + quitValue " to end."
+	input workingYearsLeft
+
+	output "Enter how much you can save per year or " + quitValue " to end."
+	input saveAmountPerYear
+				
+	while workingYearsLeft != quitValue AND saveAmountPerYear != quitValue
+		
+		savingsRequired = spendingPerYear * 30
+
+		output = "To achieve a spending of $60,000 per year for 30 years in retirement,
+			you will need a total savings of atleast " + savingsNeeded + "."
+
+		for i = 1 to workingYearsLeft
+			totalSavings = totalSavings + (saveAmountPerYear * (1 + annualInterestRate))
+		endFor
+			
+		output = "Based on your savings per year and remaining years working, here is your breakdown for retirement."
+		
+		remainingBalance = totalSavings
+
+		while currentYear <= retirementYears AND remainingBalance > 0
+			remainingBalance = (remainingBalance - spendingPerYear) * (1 + annualInterestRate)
+			output "for year " + currentYear + " your remaining balance will be " + remainingBalance
+			currentYear++
+		endWhile
+
+		output "Enter the projected amount of years you have until retirement or " + quitValue " to end."
+		input workingYearsLeft
+		
+		output "Enter how much you can save per year or " + quitValue " to end."
+		input saveAmountPerYear
+	endWhile
+END
+
+	
+			
+			
+			
+		
+
+		
+
+			
